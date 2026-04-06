@@ -1,28 +1,47 @@
 <?php
 /**
  * Plugin Name: AI Product Intake
- * Description: Admin-only WooCommerce product intake workflow with AI-assisted draft generation.
+ * Plugin URI: https://github.com/Autonomous-Builder-Bot/Wordpress-Product-Helper
+ * Description: Admin-only WooCommerce product intake workflow using image uploads and AI-assisted draft generation.
  * Version: 1.0.0
+ * Author: Autonomous Builder Bot
+ * Requires at least: 6.4
+ * Requires PHP: 7.4
+ * Text Domain: ai-product-intake
  */
 
-if (!defined('ABSPATH')) {
-    exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
 
-define('AIPI_VERSION', '1.0.0');
-define('AIPI_PLUGIN_DIR', plugin_dir_path(__FILE__));
-define('AIPI_PLUGIN_URL', plugin_dir_url(__FILE__));
+if ( ! defined( 'AIPI_VERSION' ) ) {
+	define( 'AIPI_VERSION', '1.0.0' );
+}
+
+if ( ! defined( 'AIPI_PLUGIN_FILE' ) ) {
+	define( 'AIPI_PLUGIN_FILE', __FILE__ );
+}
+
+if ( ! defined( 'AIPI_PLUGIN_BASENAME' ) ) {
+	define( 'AIPI_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
+}
+
+if ( ! defined( 'AIPI_PLUGIN_DIR' ) ) {
+	define( 'AIPI_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+}
+
+if ( ! defined( 'AIPI_PLUGIN_URL' ) ) {
+	define( 'AIPI_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+}
 
 require_once AIPI_PLUGIN_DIR . 'includes/class-aipi-plugin.php';
 
-add_action('plugins_loaded', function () {
-    if (!class_exists('WooCommerce')) {
-        add_action('admin_notices', function () {
-            echo '<div class="notice notice-error"><p>AI Product Intake requires WooCommerce.</p></div>';
-        });
-        return;
-    }
+register_activation_hook( __FILE__, array( 'AIPI_Capabilities', 'activate' ) );
+register_deactivation_hook( __FILE__, array( 'AIPI_Capabilities', 'deactivate' ) );
 
-    $plugin = new AIPI_Plugin();
-    $plugin->init();
-});
+function aipi_boot_plugin() {
+	$plugin = new AIPI_Plugin();
+	$plugin->init();
+}
+
+add_action( 'plugins_loaded', 'aipi_boot_plugin' );
