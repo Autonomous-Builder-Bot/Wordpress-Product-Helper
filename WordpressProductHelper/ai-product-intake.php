@@ -34,6 +34,7 @@ if ( ! defined( 'AIPI_PLUGIN_URL' ) ) {
 	define( 'AIPI_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 }
 
+require_once AIPI_PLUGIN_DIR . 'includes/class-aipi-capabilities.php';
 require_once AIPI_PLUGIN_DIR . 'includes/class-aipi-plugin.php';
 
 register_activation_hook( __FILE__, array( 'AIPI_Capabilities', 'activate' ) );
