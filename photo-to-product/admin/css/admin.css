@@ -1,0 +1,318 @@
+.photo-to-product .aipi-job {
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 16px;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.02);
+}
+.photo-to-product .aipi-job h2 {
+    margin: 4px 0 0;
+    font-size: 18px;
+}
+.photo-to-product .aipi-job .error {
+    color: #b32d2e;
+}
+.photo-to-product .aipi-job textarea {
+    width: 100%;
+    min-height: 96px;
+    margin: 8px 0 10px;
+}
+.photo-to-product .aipi-job .button {
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+#aipi-pro-notice {
+    display: none;
+    padding: 10px;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    font-weight: 600;
+}
+#aipi-pro-notice.notice-error { background: #fbeaea; color: #b32d2e; border: 1px solid #e7999c; }
+#aipi-pro-notice.notice-success { background: #e7f7ea; color: #116329; border: 1px solid #8bc8a9; }
+#aipi-pro-notice.notice-info { background: #eef5ff; color: #0a4b78; border: 1px solid #8fbce4; }
+.spinner.is-active { display: inline-block; visibility: visible; }
+
+#aipi-test-byo-result { margin-left: 8px; font-weight: 600; }
+#aipi-test-byo-result.aipi-test-success { color: #116329; }
+#aipi-test-byo-result.aipi-test-error { color: #b32d2e; }
+
+.aipi-page-intro { margin-top: 0; color: #50575e; max-width: 760px; }
+.aipi-nav-tabs { margin: 18px 0 20px; }
+.aipi-tab-panel { max-width: 1240px; }
+.aipi-eyebrow {
+    display: inline-block;
+    color: #50575e;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-weight: 600;
+}
+.aipi-section-head { margin: 18px 0 12px; }
+.aipi-section-head h2 { margin: 0 0 4px; }
+.aipi-section-head p,
+.aipi-muted-copy { color: #50575e; margin: 0; }
+.aipi-inline-notice { margin: 0 0 16px; }
+
+.aipi-hero-card,
+.aipi-card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.aipi-hero-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.aipi-hero-card h2,
+.aipi-card h2 { margin: 6px 0 8px; }
+.button-hero { min-width: 160px; }
+
+.aipi-grid { display: grid; gap: 16px; }
+.aipi-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.aipi-grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.aipi-metric-card { min-height: 132px; }
+.aipi-balance-card { background: linear-gradient(180deg, #fff 0%, #f7fbff 100%); }
+.aipi-metric-label {
+    display: block;
+    color: #50575e;
+    margin-bottom: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-weight: 600;
+}
+.aipi-metric-value { display: block; font-size: 30px; line-height: 1.1; }
+.aipi-metric-subtext { display: block; margin-top: 10px; color: #50575e; }
+
+.aipi-status-pill {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    background: #f0f0f1;
+    color: #1d2327;
+}
+.aipi-status-pill.is-good { background: #edfaef; color: #116329; }
+.aipi-status-pill.is-muted { background: #f0f0f1; color: #50575e; }
+.aipi-status-pill.is-bad { background: #fff1f1; color: #b32d2e; }
+.aipi-account-status {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 0 0 12px;
+    padding: 12px 14px;
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+}
+.aipi-account-copy { color: #50575e; }
+.aipi-empty-state {
+    background: #fff;
+    border: 1px dashed #c3c4c7;
+    border-radius: 8px;
+    padding: 28px;
+    text-align: center;
+}
+.aipi-empty-state h3 { margin: 0 0 6px; }
+.aipi-empty-state p { margin: 0; color: #50575e; }
+
+.aipi-job-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+.aipi-job-meta {
+    display: flex;
+    gap: 14px;
+    color: #50575e;
+    margin-bottom: 8px;
+}
+.aipi-listing {
+    border-top: 1px solid #f0f0f1;
+    margin-top: 12px;
+    padding-top: 12px;
+}
+.aipi-secret-stack {
+    display: grid;
+    gap: 10px;
+    margin-top: 8px;
+}
+.aipi-inline-actions { margin: 12px 0 0; }
+.aipi-settings-form { margin-top: 16px; }
+.aipi-summary-list,
+.aipi-simple-list { margin: 0; padding-left: 18px; }
+.aipi-summary-list li,
+.aipi-simple-list li { margin: 0 0 8px; }
+.aipi-activity-list { list-style: none; margin: 0; padding: 0; }
+.aipi-activity-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid #f0f0f1;
+}
+.aipi-activity-list li:first-child { border-top: 0; padding-top: 0; }
+.aipi-activity-meta,
+.aipi-activity-time { display: block; color: #50575e; font-size: 12px; margin-top: 2px; }
+.aipi-buy-card h2,
+#aipi-pro-buy-credits h2 { margin-top: 0; }
+
+@media (max-width: 960px) {
+    .aipi-grid-2,
+    .aipi-grid-4 { grid-template-columns: 1fr; }
+    .aipi-hero-card,
+    .aipi-job-head { flex-direction: column; align-items: flex-start; }
+}
+
+.aipi-bulk-card { margin-bottom: 16px; }
+.aipi-bulk-card summary,
+.aipi-advanced-card summary,
+.aipi-inline-details summary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+.aipi-bulk-card summary::-webkit-details-marker,
+.aipi-advanced-card summary::-webkit-details-marker,
+.aipi-inline-details summary::-webkit-details-marker { display: none; }
+.aipi-bulk-card[open] summary,
+.aipi-advanced-card[open] summary { margin-bottom: 14px; }
+.aipi-bulk-toolbar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.aipi-bulk-file-list { margin: 16px 0; }
+.aipi-bulk-file-table td, .aipi-bulk-file-table th { vertical-align: middle; }
+.aipi-bulk-file-meta { display: flex; align-items: center; gap: 12px; }
+.aipi-bulk-file-meta img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #dcdcde;
+}
+.aipi-bulk-file-meta span { display:block; color:#50575e; font-size:12px; margin-top:3px; }
+.aipi-subcard { margin: 14px 0; }
+.aipi-bulk-summary-meta {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    color: #50575e;
+    font-size: 13px;
+}
+.aipi-bulk-summary-list { margin: 12px 0 0 18px; }
+.aipi-bulk-summary-list li { margin: 0 0 8px; }
+.aipi-bulk-summary-notes { color:#50575e; margin-top:4px; }
+.aipi-bulk-group-card { background:#fff; border:1px solid #dcdcde; border-radius:8px; padding:16px; }
+.aipi-bulk-group-head { display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:10px; }
+.aipi-bulk-group-head .regular-text { max-width: 100%; }
+.aipi-bulk-group-count { margin:0 0 8px; color:#50575e; }
+.aipi-bulk-thumb-row { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+.aipi-bulk-thumb { width:90px; margin:0; }
+.aipi-bulk-thumb img { width:90px; height:90px; object-fit:cover; border-radius:8px; border:1px solid #dcdcde; display:block; }
+.aipi-bulk-thumb figcaption { font-size:11px; color:#50575e; margin-top:4px; word-break: break-word; }
+.aipi-bulk-empty { background:#f6f7f7; border:1px dashed #c3c4c7; border-radius:8px; padding:20px; color:#50575e; }
+.aipi-bulk-status { margin: 8px 0 16px; padding: 10px 12px; border-radius: 6px; background:#fff; border:1px solid #dcdcde; }
+.aipi-bulk-status.notice-warning { background:#fff8e5; border-color:#dba617; }
+.aipi-bulk-status.notice-success { background:#edfaef; border-color:#72aee6; }
+.aipi-inline-details { margin-top: 4px; }
+.aipi-inline-details[open] { display:block; }
+@media (max-width: 960px) {
+    .aipi-bulk-group-head,
+    .aipi-bulk-toolbar { align-items: stretch; }
+}
+
+.aipi-empty-state.is-error { border-style: solid; border-color: #d63638; }
+.aipi-field-label { display:block; font-weight:600; margin:8px 0 4px; }
+.aipi-summary-warning { color:#b32d2e; font-weight:600; }
+.aipi-bulk-result-block { margin-top: 14px; }
+.aipi-bulk-result-block strong { display:block; margin-bottom:6px; }
+
+.photo-to-product .aipi-job-id {
+    display: inline-block;
+    margin-top: 3px;
+    color: #646970;
+    font-size: 12px;
+}
+.photo-to-product .aipi-next-step {
+    margin: 10px 0 12px;
+    padding: 10px 12px;
+    border-left: 4px solid #72aee6;
+    background: #f6f7f7;
+    color: #1d2327;
+}
+.photo-to-product .aipi-progress-copy,
+.photo-to-product .aipi-success-copy {
+    margin: 12px 0;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background: #f6f7f7;
+}
+.photo-to-product .aipi-success-copy {
+    background: #edfaef;
+    color: #116329;
+    font-weight: 600;
+}
+.photo-to-product .aipi-listing-head {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f1;
+}
+.photo-to-product .aipi-listing-head h3 {
+    margin: 0 0 4px;
+}
+.photo-to-product .aipi-listing-head p {
+    margin: 0;
+    color: #646970;
+}
+.photo-to-product .aipi-bulk-empty strong,
+.photo-to-product .aipi-bulk-empty span {
+    display: block;
+}
+.photo-to-product .aipi-bulk-empty strong {
+    margin-bottom: 4px;
+    color: #1d2327;
+}
+.photo-to-product .aipi-bulk-result-block {
+    padding-top: 4px;
+}
+.photo-to-product .aipi-bulk-result-block p:last-child {
+    margin-bottom: 0;
+}
+.photo-to-product .aipi-summary-warning {
+    padding: 8px 10px;
+    margin: 10px 0 0;
+    border-left: 4px solid #dba617;
+    background: #fff8e5;
+}
+.photo-to-product .aipi-bulk-status.notice-warning {
+    color: #3c2f00;
+}
+.photo-to-product .aipi-bulk-status.notice-success {
+    color: #116329;
+}
+.photo-to-product .aipi-card table.form-table th {
+    width: 210px;
+}
+.photo-to-product .aipi-card .description {
+    color: #646970;
+}
